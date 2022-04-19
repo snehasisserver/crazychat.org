@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Crazychat: Group making </title>
+<link rel="icon" href="Crazy chat logo.png">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+    html, body
+{
+  height: 100%;
+  margin: 0;
+  
+}
+
+body
+{
+background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);
+}
+
+.header
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+}
+     #footer{
+                padding-top: 2px;
+                padding-bottom: 2px;
+                background-color: gainsboro;
+                font-size: 17px;
+                color: black;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            #group_input{
+                width: 600px;
+                height: 30px;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            header{
+                color: red;
+                font-size: 25px;
+                font-family:serif ;
+            }
+            #p1{
+                font-family: fantasy;
+                font-size: 30px;
+                color:white;
+            }
+            #addbutton{
+                border: 1px black;
+                border-radius: 10px;
+                width: 100px;
+                height: 40px;
+                color: black;
+                background-color: lightgreen;
+            }
+            #addbutton:hover{
+                background-color: lightblue;
+                border: 5px gainsboro solid;
+
+            }
+            
+#logout
+{
+	font-size: 20px;
+     float: right;
+}
+#output
+{
+	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}
+#output:hover{
+    cursor: pointer;
+}
+
+</style>
+    </head>
+    
+    <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+        <div class="container">
+        <center>
+            <header><h1>Create Group Here</h1></header><br>
+
+            <h3 id="welcome"></h3><br>
+            <p><b>Notice : </b> Plese don't give gaps while creating group. Use _ to give gaps.</p>
+            <input type="text" placeholder="Create your group here!" id="group_input">
+            <button type="button" id="addbutton" onclick="add()">Create</button>
+            <p id="p1">#TRENDINGROOMS</p><br>
+            <div id="output"></div>
+        </center>
+    </div>
+        <footer id="footer">
+            <h4>Created by - <b>Snehasis Ghosh</b></h4>
+                    </footer>
+    </body>
+    <script src="main2.js"></script>
+</html>

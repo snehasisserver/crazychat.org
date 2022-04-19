@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>CrazyChat: Student's Crazy Chats</title>
+        <link rel="icon" href="Crazy chat logo.png">
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                border: 0px;
+            }
+            #header_h1{
+                font-size:40px;
+            }
+            #footer{
+                padding-top: 2px;
+                padding-bottom: 2px;
+                background-color: gainsboro;
+                font-size: 17px;
+                color: black;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            #div1{
+                background-color:lightskyblue;
+                border-radius: 40px;
+                border: solid 5px gainsboro;
+                width: 50%;
+            }
+#name1lable{
+    font-size: 28px;
+    color: black;
+}
+#name1lable:hover{
+    cursor: text;
+    
+}
+#iname{
+    width: 450px;
+    height: 30px;
+    border:0px;
+    border-radius: 5px;
+}
+
+#loginbutton{
+    border-radius: 40px;
+    color: black;
+    background-color:#bf7c7c;
+    width: 200px;
+    height: 40px;
+    border: 1px solid greenyellow;
+font-size: 19px;
+}
+#loginbutton:hover{
+    background-color: #f72a2a;
+    color: wheat;
+    border: solid 5px whitesmoke;
+    cursor:pointer;
+}
+#h44{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html, body
+{
+  height: 100%;
+  margin: 0;
+  
+}
+
+body
+{
+background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);
+}
+
+.header
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+}
+        </style>
+    </head>
+    <body>
+        <center>
+        <header>
+<h1 id="header_h1">Log in<img src=""></h1>
+        </header>
+        <br>
+        <div id="div1">
+            <form>
+              
+              <br>
+              <h4 id="h44">Type your username and password to Log in.</h4>
+              
+              <label id="name1lable" for="iname">Name : </label>
+              <input type="text" placeholder="Type your name" id="iname">
+              <br>
+              <br>
+              
+             
+              
+             
+              <button type="button" id="loginbutton" onclick="get()">Log in</button>
+              <br>
+              <br>
+            </form>
+            
+          </div>
+    </center>
+        <footer id="footer">
+<h4>Created by - <b>Snehasis Ghosh</b></h4>
+        </footer>
+    </body>
+    <script src="main.js"></script>
+</html>
